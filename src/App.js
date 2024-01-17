@@ -2,7 +2,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import PortfolioList from "./components/PortfolioList";
 import PortfolioDetail from "./components/PortfolioDetail";
 import ContactPage from "./components/ContactPage";
 import { createGlobalStyle } from "styled-components";
@@ -26,8 +25,7 @@ const App = () => {
         <GlobalStyle />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/portfolios" element={<PortfolioList />} />
-          <Route path="/portfolio/:id" element={<PortfolioDetail />} />
+          <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>

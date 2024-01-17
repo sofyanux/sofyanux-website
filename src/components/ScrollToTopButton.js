@@ -12,7 +12,9 @@ const ScrollToTopButtonContainer = styled.div`
   color: #fff;
   border: none;
   border-radius: 50%;
-  padding: 10px 10px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
   cursor: pointer;
   opacity: ${(props) => (props.isVisible ? 1 : 0)};
   transition: opacity 0.3s ease-in-out;

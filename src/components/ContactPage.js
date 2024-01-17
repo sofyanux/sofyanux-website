@@ -34,23 +34,23 @@ const SocialIcon = styled.a`
   }
 
   &.linkedin {
-    cursor: url(images/cursor-linkedin.png), auto;
+    cursor: url(images/cursor/cursor-linkedin.png), auto;
   }
 
   &.instagram {
-    cursor: url(images/cursor-instagram.png), auto;
+    cursor: url(images/cursor/cursor-instagram.png), auto;
   }
 
   &.behance {
-    cursor: url(images/cursor-behance.png), auto;
+    cursor: url(images/cursor/cursor-behance.png), auto;
   }
 
   &.dribbble {
-    cursor: url(images/cursor-dribbble.png), auto;
+    cursor: url(images/cursor/cursor-dribbble.png), auto;
   }
 
   &.github {
-    cursor: url(images/cursor-github.png), auto;
+    cursor: url(images/cursor/cursor-github.png), auto;
   }
 `;
 
@@ -65,11 +65,11 @@ const ContactLink = styled.a`
   }
 
   &.email {
-    cursor: url(images/cursor-email.png), auto;
+    cursor: url(images/cursor/cursor-email.png), auto;
   }
 
   &.resume {
-    cursor: url(images/cursor-download.png), auto;
+    cursor: url(images/cursor/cursor-download.png), auto;
   }
 `;
 

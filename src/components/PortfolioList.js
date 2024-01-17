@@ -29,7 +29,7 @@ const PortfolioCard = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    cursor: url(images/cursor.png), auto;
+    cursor: url(images/cursor/cursor.png), auto;
     .arrow-icon {
       transform: rotate(0deg);
     }
@@ -110,6 +110,13 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 1",
     thumbnail: "/images/avatar.jpg",
+    slug: "coffee-shop-app",
+    heroImages: [
+      "/images/avatar.jpg",
+      "/images/cursor/cursor-backtop.png",
+      "/images/avatar.jpg",
+      "/images/cursor/cursor.png",
+    ],
   },
   {
     id: 2,
@@ -117,6 +124,12 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-2",
+    heroImages: [
+      "/images/avatar.jpg",
+      "/images/avatar.jpg",
+      "/images/avatar.jpg",
+    ],
   },
   {
     id: 3,
@@ -124,6 +137,7 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-3",
   },
   {
     id: 4,
@@ -131,6 +145,7 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-4",
   },
   {
     id: 5,
@@ -138,6 +153,7 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-5",
   },
   {
     id: 6,
@@ -145,6 +161,7 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-6",
   },
   {
     id: 7,
@@ -152,6 +169,7 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-7",
   },
   {
     id: 8,
@@ -159,6 +177,7 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-8",
   },
   {
     id: 9,
@@ -166,6 +185,7 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-9",
   },
   {
     id: 10,
@@ -173,13 +193,15 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-10",
   },
   {
     id: 11,
-    title: "Project 2",
+    title: "Project ",
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-11",
   },
   {
     id: 12,
@@ -187,6 +209,7 @@ const portfolios = [
     category: "UI/UX Design",
     description: "Description of Project 2",
     thumbnail: "/images/avatar.jpg",
+    slug: "project-12",
   },
 ];
 
@@ -194,7 +217,7 @@ const PortfolioList = () => {
   return (
     <PortfolioContainer>
       {portfolios.map((portfolio) => (
-        <PortfolioCard key={portfolio.id} to={`/portfolio/${portfolio.id}`}>
+        <PortfolioCard key={portfolio.id} to={`/portfolio/${portfolio.slug}`}>
           <TextContainer>
             <PortfolioCategory>{portfolio.category}</PortfolioCategory>
             <PortfolioTitle>{portfolio.title}</PortfolioTitle>
