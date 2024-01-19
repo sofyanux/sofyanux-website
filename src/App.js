@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: rgb(253, 253, 253);
     opacity: 1;
     background-size: 15px 15px;
-    cursor: url(images/cursor-normal.png), auto;
+    cursor: url(images/cursor/cursor-normal.png), auto;
   }
 `;
 
